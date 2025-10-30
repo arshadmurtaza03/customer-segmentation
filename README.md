@@ -2,6 +2,9 @@
 
 An end-to-end machine learning project that segments customers based on their purchasing behavior using unsupervised learning.
 
+---
+## Demo
+[Live app (Streamlit)](https://arshadmurtaza03-customer-segmentation-app-p5vrre.streamlit.app/)
 
 ---
 
@@ -133,8 +136,8 @@ The model identified **4 distinct customer segments**:
 
 ## How to contact
 
-Author: Arshad Murtaza
-Email: arshadmurtaza2016@gmail.com
-LinkedIn: linkedin.com/in/arshadmurtaza
+- Author: Arshad Murtaza
+- Email: arshadmurtaza2016@gmail.com
+- LinkedIn: linkedin.com/in/arshadmurtaza
 
 ---
