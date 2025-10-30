@@ -112,11 +112,10 @@ The model identified **4 distinct customer segments**:
    - Regular customers with good potential
 
 3.  **Potential Loyalists**: (70.4% of total customers)
-   - Haven't purchased recently
-   - Need re-engagement campaigns
+   - Have moderate purchase frequency and monetary value
 
 4. **At Risk Customers**: (24.6% of customers)
-   - Declining engagement
+   - Haven't purchased in a very long time.- Very low frequency and monetary value
 
 
 **Performance:**
@@ -132,16 +131,10 @@ The model identified **4 distinct customer segments**:
 - Git and GitHub workflow
 
 
-## 📧 Contact
-
-[Arshad Murtaza] - [arshadmurtaza2016@gmail.com]
-
-LinkedIn: [linkedin.com/in/arshadmurtaza]
-
-Project Link: [https://github.com/yourusername/customer-segmentation](https://github.com/yourusername/customer-segmentation)
+## How to contact
 
 Author: Arshad Murtaza
-GitHub: https://github.com/arshadmurtaza03/hyperlocal-delivery-time.git
 Email: arshadmurtaza2016@gmail.com
+LinkedIn: linkedin.com/in/arshadmurtaza
 
 ---
