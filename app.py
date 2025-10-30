@@ -73,3 +73,60 @@ with col2:
         step=10.0,
         help="What is the total amount this customer has spent?"
     )
+
+st.markdown("---")
+
+# Prediction button
+if st.button("Predict Customer Segment", type="primary"):
+    # Prepare input data
+    input_data = np.array([[recency, frequency, monetary]])
+    
+    # Scale the input
+    input_scaled = scaler.transform(input_data)
+    
+    # Make prediction
+    cluster = kmeans.predict(input_scaled)[0]
+    segment_name = cluster_names[cluster]
+    
+    # Display result
+    st.success(f"### Customer Segment: *{segment_name}* (Cluster {cluster})")
+    
+    # Show characteristics
+    st.markdown("#### Segment Characteristics:")
+    
+    if segment_name == "VIP Customers":
+        st.info("""
+        *VIP Customers* are the best customers They:
+        - Shop frequently and recently
+        - Spend the most money
+        - Are highly engaged and loyal
+        
+        *Recommendation:* Reward them with exclusive offers and VIP treatment.
+        """)
+
+    elif segment_name == "Loyal Customers":
+        st.info("""
+        *Loyal Customers* are valuable and engaged. They:
+        - Shop regularly and recently
+        - Have good purchase frequency
+        - Show consistent engagement
+        
+        *Recommendation:* Nurture with loyalty programs and early product access.
+        """)
+
+    elif segment_name == "Potential Loyalists":
+        st.warning("""
+        *Potential Loyalists* customers need attention! They:
+        - Have moderate purchase frequency and monetary value
+        
+        *Recommendation:* Send win-back campaigns and special incentives.
+        """)
+
+    else:
+        st.error("""
+        *At Risk Customers* They:
+        - Haven't purchased in a very long time.
+        - Very low frequency and monetary value
+        
+        *Recommendation:* Send personalized win-back campaigns and special discounts to re-engage them.
+        """)
