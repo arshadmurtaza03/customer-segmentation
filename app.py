@@ -130,3 +130,10 @@ if st.button("Predict Customer Segment", type="primary"):
         
         *Recommendation:* Send personalized win-back campaigns and special discounts to re-engage them.
         """)
+
+# Sidebar information
+st.sidebar.title("About This Project")
+st.sidebar.info("""
+This Customer Segmentation tool uses *K-Means Clustering* to categorize customers into distinct segments based on their 
+shopping behavior (RFM Analysis).
+""")
